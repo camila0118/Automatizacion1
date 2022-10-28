@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Demoqa" skipped="0" tests="1" time="30.59" timestamp="2022-10-11 04:33:38"><testcase name="enter data in the form"><error message="Keys to send should be a not null CharSequence" type="java.lang.IllegalArgumentException">Keys to send should be a not null CharSequence</error><system-err>Keys to send should be a not null CharSequence&#13;
+com.co.formulario.tasks.FormTasks.performAs(FormTasks.java:22)&#13;
+com.co.formulario.stepdefinitions.Formstepdefinitions.heUserEnterData(Formstepdefinitions.java:41)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

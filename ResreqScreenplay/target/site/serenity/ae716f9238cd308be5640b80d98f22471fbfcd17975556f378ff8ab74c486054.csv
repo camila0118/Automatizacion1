@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Register tu users","Register Successful","SUCCESS","2022-10-27T16:52:18.6064333-05:00[America/Bogota]","0.0","5.28"
+"Register tu users","put the user","SUCCESS","2022-10-27T16:52:23.9045785-05:00[America/Bogota]","0.0","1.09"
+"Register tu users","get list user","ERROR","2022-10-27T16:52:25.0105366-05:00[America/Bogota]","0.0","0.43"
+"Register tu users","Login successful","SUCCESS","2022-10-27T16:52:25.5910069-05:00[America/Bogota]","0.0","0.65"
+"Register tu users","Login successful2","FAILURE","2022-10-27T17:02:33.9830773-05:00[America/Bogota]","0.0","5.97"

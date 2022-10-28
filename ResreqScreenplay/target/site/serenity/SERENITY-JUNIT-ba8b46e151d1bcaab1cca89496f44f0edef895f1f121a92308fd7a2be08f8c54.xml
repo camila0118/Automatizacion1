@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Register tu users" skipped="0" tests="3" time="6.23" timestamp="2022-10-27 05:27:10"><testcase name="Login successful2"><failure message="&#10;Expected: &lt;200&gt;&#10;     but: was &lt;403&gt;" type="java.lang.AssertionError">
+Expected: &lt;200&gt;
+     but: was &lt;403&gt;</failure><system-err>
+Expected: &lt;200&gt;
+     but: was &lt;403&gt;&#13;
+rest.com.co.stepdefinitions.Login_step_conduit.heShouldSeeTheArticlesAndProductsIntoPages(Login_step_conduit.java:53)&#13;
+✽.he should see the articles and products into pages(file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature:33)&#13;
+</system-err></testcase></testsuite>

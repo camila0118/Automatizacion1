@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Register tu users" tests="8" skipped="0" failures="3" errors="0" timestamp="2022-10-27T23:05:03" hostname="GS-0027" time="8.626">
+  <properties/>
+  <testcase name="Register Successful" classname="Register tu users" time="5.004"/>
+  <testcase name="put the user" classname="Register tu users" time="1.102"/>
+  <testcase name="get list user" classname="Register tu users" time="0.531">
+    <failure message="java.lang.AssertionError: class java.util.ArrayList cannot be cast to class java.lang.String (java.util.ArrayList and java.lang.String are in module java.base of loader 'bootstrap')" type="java.lang.AssertionError">java.lang.AssertionError: class java.util.ArrayList cannot be cast to class java.lang.String (java.util.ArrayList and java.lang.String are in module java.base of loader 'bootstrap')
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at rest.com.co.stepdefinitions.Register_Step.heShouldTheDataList(Register_Step.java:76)
+	at ✽.he should the data list(file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature:20)
+</failure>
+  </testcase>
+  <testcase name="Login successful" classname="Register tu users" time="0.588"/>
+  <testcase name="Login successful2 #1" classname="Register tu users" time="0.502"/>
+  <testcase name="Login successful2 #2" classname="Register tu users" time="0.458"/>
+  <testcase name="Login successful2 #3" classname="Register tu users" time="0.386">
+    <failure message="java.lang.AssertionError: &#10;Expected: &lt;200&gt;&#10;     but: was &lt;403&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &lt;200&gt;
+     but: was &lt;403&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at rest.com.co.stepdefinitions.Login_step_conduit.heShouldSeeTheArticlesAndProductsIntoPages(Login_step_conduit.java:53)
+	at ✽.he should see the articles and products into pages(file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature:33)
+</failure>
+  </testcase>
+  <testcase name="delete articles" classname="Register tu users" time="0.054">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step &quot;we see articles for the delete&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@When(&quot;we see articles for the delete&quot;)&#10;public void weSeeArticlesForTheDelete() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@Then(&quot;see that the articles are deleted&quot;)&#10;public void seeThatTheArticlesAreDeleted() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &quot;we see articles for the delete&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;we see articles for the delete&quot;)
+public void weSeeArticlesForTheDelete() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Then(&quot;see that the articles are deleted&quot;)
+public void seeThatTheArticlesAreDeleted() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
+  <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 27 Oct 2022 23:05:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ttqn4P6PabT7L88hiiVAJGAQJuE3vcfPLWisUWqU8tcNRO8zbhwNDsTdZMoDYlmtTo8mnfwBWkb0r%2FkK%2FQN%2FGYrt5EjUNS788lDIsbktebBei3l%2F3uBa2yrYlA%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 760f132deb8c8dd6-MIA
+
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+morpheus
+HTTP/1.1 200 OK
+Date: Thu, 27 Oct 2022 23:05:12 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"166-VCy380izN82fufGedKZrToLKIqM"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FXUqqGMfIdf%2FgemDWxcfS3jyt3E4L23HruQwlvjXfo0o%2Fgu2vOYIiqVFJDqX19a%2FKNcLjc0bqSZCnHK5oia6CTSVPLn0Q%2BST0tzl6ZsP%2FYafI1SmIjWcL7U1GzNrHBeT6Vxb"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 760f133d8a91da87-MIA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "user": {
+        "email": "maob13@yopmail.com",
+        "username": "mauriciobuitrago",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hb2IxM0B5b3BtYWlsLmNvbSIsInVzZXJuYW1lIjoibWF1cmljaW9idWl0cmFnbyIsImlhdCI6MTY2NjkxMTkxMiwiZXhwIjoxNjcyMDk1OTEyfQ.W4-pLmC_ktbEqHIaU4uV8_eAvEqLJzAQ7UMhC9UqU1c"
+    }
+}
+HTTP/1.1 200 OK
+Date: Thu, 27 Oct 2022 23:05:13 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"166-fcXP2ljMQOUdUpetj7Ry+Ce19PA"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Sz4mObnPMsfEbnDHxLqtqw379P%2Fnh116g8rI6ygyN%2FYSjru9b3PxyZNbPRKYVxdUwKcBdbvna%2BFrhdkAy7Z%2BN%2BttGGg1tR0UBwHXEK7pYyFZc2BB1%2FTzdf2DwV4Xa%2FGhR%2BT%2B"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 760f134078d167ba-MIA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "user": {
+        "email": "maob13@yopmail.com",
+        "username": "mauriciobuitrago",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hb2IxM0B5b3BtYWlsLmNvbSIsInVzZXJuYW1lIjoibWF1cmljaW9idWl0cmFnbyIsImlhdCI6MTY2NjkxMTkxMywiZXhwIjoxNjcyMDk1OTEzfQ.nG-CJeW6VuPlZg08qVj8AgaVMrvvVkOwLQVUA4Uyoqk"
+    }
+}
+HTTP/1.1 200 OK
+Date: Thu, 27 Oct 2022 23:05:13 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"153-9/GBFaik7feQfGbbIIk4XLEb0h0"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lobzWEK27FzrReQOcf%2BYtinpWv2AieQyrbTye%2B7mWIifG%2FXC38X77nF9e1mc6WA4bhMPtc1sOrgnjOnGj1hyzRLws6TvBfDulAftBe6bDJMQoM8TDWmLYjwmJc5T2tqmf46d"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 760f13437a586da4-MIA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "user": {
+        "email": "jarv078@gmail.com",
+        "username": "johantest",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphcnYwNzhAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqb2hhbnRlc3QiLCJpYXQiOjE2NjY5MTE5MTMsImV4cCI6MTY3MjA5NTkxM30.iPeuPRaegL1gojlORmxR8nuDXnDwA6WjdEdH7clpKUU"
+    }
+}
+HTTP/1.1 403 Forbidden
+Date: Thu, 27 Oct 2022 23:05:14 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 47
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"2f-83PWxEwXkLR3WfVjo3wqB0FwKlU"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LokCDptBXeTWjN6yStrgaCX7%2BGdlCl7d17PLCrX2cY82rRPRsUJiZVuzQVJfi3disjyWAiHgvSwqItkt4hMl0i0jGl5YQV4ma2aU9x30syxrqPsGQ6SwB6eiSK3v0yhfu4BC"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 760f13466871dac9-MIA
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "errors": {
+        "email or password": [
+            "is invalid"
+        ]
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Register Successful(register-tu-users;register-successful)
+-------------------------------------------------------------------
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Register Successful
+----------------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+put the user(register-tu-users;put-the-user)
+-------------------------------------------------------------------
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+put the user
+----------------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+get list user(register-tu-users;get-list-user)
+-------------------------------------------------------------------
+[Test worker] ERROR  - 
+         __  _____ _____ ____ _____   _____ ____  ____   ___  ____  
+ _      / / |_   _| ____/ ___|_   _| | ____|  _ \|  _ \ / _ \|  _ \ 
+(_)____| |    | | |  _| \___ \ | |   |  _| | |_) | |_) | | | | |_) |
+ |_____| |    | | | |___ ___) || |   | |___|  _ <|  _ <| |_| |  _ < 
+(_)    | |    |_| |_____|____/ |_|   |_____|_| \_\_| \_\\___/|_| \_\
+        \_\                                                         
+
+get list user
+---------------------------------------------------------------------
+[Test worker] ERROR  -     Test failed at step: Then compare list get
+[Test worker] ERROR  -     class java.util.ArrayList cannot be cast to class java.lang.String (java.util.ArrayList and java.lang.String are in module java.base of loader 'bootstrap')
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Login successful(register-tu-users;login-successful)
+-------------------------------------------------------------------
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Login successful
+----------------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Login successful2(register-tu-users;login-successful2)
+-------------------------------------------------------------------
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Login successful2
+----------------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Login successful2
+----------------------------------------------------------------------------
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Projects/ResreqScreenplay/src/test/resources/features/register_user.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+delete articles(register-tu-users;delete-articles)
+-------------------------------------------------------------------
+[Test worker] INFO  - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+
+delete articles
+-------------------------------------------------------------------------------
+]]></system-err>
+</testsuite>
